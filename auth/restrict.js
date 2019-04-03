@@ -10,7 +10,7 @@ module.exports = (req, res, next) => {
         console.log(error);
         res.status(401).json({ message: "Invalid creditials" });
       } else {
-        //req.decodedJwt = decodedToken; -> Stretch
+        req.decodedJwt = decodedToken;
         next();
       }
     });
