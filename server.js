@@ -1,6 +1,6 @@
 const express = require("express");
 const helmet = require("helmet");
-const cores = require("cors");
+const cors = require("cors");
 
 const authRoutes = require("./auth/routes.js");
 
